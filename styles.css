@@ -3,10 +3,10 @@ body {
     margin: 0;
     padding: 0;
     color: #000;
-    background-color: #fff;
+    background-color: #F2EDD5;
 }
 header {
-    background-color: #fff;
+    background-color: #F2EDD5;
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #ff9933;
@@ -32,7 +32,7 @@ nav a {
 .carousel {
     padding: 30px 0;
     text-align: center;
-    background-color: #fff;
+    background-color: #F2EDD5;
 }
 .carousel-images {
     display: flex;
@@ -58,7 +58,7 @@ nav a {
 }
 .features div {
     padding: 20px;
-    background-color: #fff;
+    background-color: #FFE0B2;
     border-radius: 5px;
     border: 1px solid #ff9933;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -70,7 +70,7 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #FFE0B2;
     padding: 20px;
     border-radius: 10px;
     border: 2px solid #ff9933;
@@ -83,9 +83,17 @@ nav a {
 .about-image, .motivational-image {
     width: 40%;
 }
-.about-image img, .motivational-image img {
+.about-image img img {
     width: 100%;
     border-radius: 10px;
+    max-width: 500px;
+    max-height: 500px;
+}
+.motivational-image img{
+    width: 100%;
+    border-radius: 10px;
+    max-width: 200px;
+    max-height: 500px;
 }
 .motivational-text p {
     font-style: italic;
@@ -115,7 +123,7 @@ form button:hover {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #ff9933;
+    background-color: #5A87A0;
     color: white;
     text-decoration: none;
     border-radius: 5px;
