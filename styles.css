@@ -142,6 +142,20 @@ form button:hover {
     color: #ff9933;
     margin-right: 10px;
 }
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .container {
         width: 90%;
@@ -156,4 +170,47 @@ form button:hover {
         width: 100%;
         margin-bottom: 20px;
     }
+
+
+
+
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        margin: 5px 0;
+        color: #ff9933;
+        text-decoration: none;
+        border-bottom: 1px solid #ff9933;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+    
+    nav.active {
+        display: flex;
+    }
 }
+
+
+
