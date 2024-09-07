@@ -40,9 +40,9 @@ nav a {
     align-items: center;
 }
 .carousel-images img {
-    width: 300px;
-    height: auto;
-    max-height: 300px;
+    width: auto;
+    height: 300px;
+    max-height: 400px;
     display: none;
     object-fit: cover;
 }
