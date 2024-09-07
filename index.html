@@ -16,6 +16,9 @@
                 <a href="#about">About Us</a>
                 <a href="#contact">Contact</a>
             </nav>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="material-icons">menu</span>
+            </button>
         </div>
     </header>
 
@@ -118,6 +121,13 @@
             currentIndex = (currentIndex + 1) % images.length;
             images[currentIndex].style.display = 'block';
         }, 3000); 
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
     </script>
 </body>
 </html>
