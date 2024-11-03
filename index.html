@@ -111,3 +111,55 @@
             </div>
         </div>
     </section>
+
+<!-- Contact Section -->
+     <section id="contact" class="cont-section">
+        <div class="container contact-section" aria-label="Contact section">
+            <div class="form-container z-depth-3" aria-label="Contact form">
+                <h5 style="color:#D9A60D;">Contact Us</h5>
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="name" type="text" class="validate" aria-required="true" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate" aria-required="true" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea" aria-required="true" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button class="btn waves-effect waves-light orange darken-2" type="submit" name="action">
+                        Send
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="image-container">
+                <i class="material-icons contact-icon" aria-hidden="true">restaurant</i>
+                <h5>Find us at:</h5>
+                <img src="./Imagenes/Descargar.png" alt="Socialmedia" aria-label="Socialmedia">
+            </div>
+        </div>
+    </section>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
